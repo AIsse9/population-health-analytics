@@ -135,9 +135,7 @@ Calculated at **state and zip code level** to support regional outreach planning
 
 ## 📊 Report Pages
 
-<details>
-<summary><b>Page 1 — Executive Summary</b> · Geographic Coverage</summary>
-
+### Page 1 — Executive Summary · Geographic Coverage
 > *"Where are our preventive care compliance gaps?"*
 
 ![Executive Summary](executive-summary.png)
@@ -150,11 +148,9 @@ Calculated at **state and zip code level** to support regional outreach planning
 | Members Overdue by Zip Code | Horizontal bar — highest gaps first |
 | Readiness Score % by Zip Code | Sorted bar — lowest compliance at top |
 
-</details>
+---
 
-<details>
-<summary><b>Page 2 — Member Risk</b> · Population Risk Stratification</summary>
-
+### Page 2 — Member Risk · Population Risk Stratification
 > *"How is our population distributed across risk tiers?"*
 
 ![Member Risk](member-risk.png)
@@ -165,11 +161,9 @@ Calculated at **state and zip code level** to support regional outreach planning
 | Risk Score by Member | Top risk individuals by name |
 | Member risk matrix table | Chronic conditions, days since visit, admissions, risk score |
 
-</details>
+---
 
-<details>
-<summary><b>Page 3 — Chronic Conditions</b> · Follow-Up Tracking</summary>
-
+### Page 3 — Chronic Conditions · Follow-Up Tracking
 > *"Which members have the most critical care gaps?"*
 
 ![Chronic Conditions](chronic-conditions.png)
@@ -183,11 +177,9 @@ Calculated at **state and zip code level** to support regional outreach planning
 | Days Since Last Visit chart | Members by gap severity — drill-through enabled |
 | Members at Risk KPI | At Risk member count |
 
-</details>
+---
 
-<details>
-<summary><b>Page 4 — Member Detail</b> · Individual 360 View</summary>
-
+### Page 4 — Member Detail · Individual 360 View
 > *"Everything needed before making an outreach call."*
 
 Accessible via **drill-through** from the Chronic Conditions page.
@@ -203,8 +195,6 @@ Accessible via **drill-through** from the Chronic Conditions page.
 | Email | Contact information |
 | Gender | Demographics |
 | Detail table | ID, Risk Category, Risk Score, Chronic Count, Readmissions, DOB, Enrollment Date |
-
-</details>
 
 ---
 
@@ -291,4 +281,3 @@ Full methodology documentation included in `/docs`:
 Ahmed Isse · May 2026
 
 </div>
-
