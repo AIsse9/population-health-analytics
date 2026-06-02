@@ -1,4 +1,3 @@
-
 <div align="center">
 
 ```
@@ -141,7 +140,7 @@ Calculated at **state and zip code level** to support regional outreach planning
 
 > *"Where are our preventive care compliance gaps?"*
 
-![Executive Summary](assets/executive-summary.png)
+![Executive Summary](executive-summary.png)
 
 | Visual | Purpose |
 |---|---|
@@ -158,7 +157,7 @@ Calculated at **state and zip code level** to support regional outreach planning
 
 > *"How is our population distributed across risk tiers?"*
 
-![Member Risk](assets/member-risk.png)
+![Member Risk](member-risk.png)
 
 | Visual | Purpose |
 |---|---|
@@ -173,7 +172,7 @@ Calculated at **state and zip code level** to support regional outreach planning
 
 > *"Which members have the most critical care gaps?"*
 
-![Chronic Conditions](assets/chronic-conditions.png)
+![Chronic Conditions](chronic-conditions.png)
 
 | Visual | Purpose |
 |---|---|
@@ -193,7 +192,7 @@ Calculated at **state and zip code level** to support regional outreach planning
 
 Accessible via **drill-through** from the Chronic Conditions page.
 
-![Member Detail](assets/member-detail.png)
+![Member Detail](member-detail.png)
 
 | Visual | Content |
 |---|---|
@@ -292,3 +291,4 @@ Full methodology documentation included in `/docs`:
 Ahmed Isse · May 2026
 
 </div>
+
