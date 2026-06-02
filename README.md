@@ -1,5 +1,4 @@
-# population-health-analytics
-Power BI dashboard for population health management — tracks member preventive care compliance, chronic condition follow-up, and risk stratification using a weighted clinical scoring model. Built with MySQL, Power BI, and an on-premises data gateway.
+
 <div align="center">
 
 ```
@@ -142,6 +141,8 @@ Calculated at **state and zip code level** to support regional outreach planning
 
 > *"Where are our preventive care compliance gaps?"*
 
+![Executive Summary](assets/executive-summary.png)
+
 | Visual | Purpose |
 |---|---|
 | Total Members KPI | Population scale |
@@ -157,6 +158,8 @@ Calculated at **state and zip code level** to support regional outreach planning
 
 > *"How is our population distributed across risk tiers?"*
 
+![Member Risk](assets/member-risk.png)
+
 | Visual | Purpose |
 |---|---|
 | Risk Distribution donut | Population-level risk overview |
@@ -169,6 +172,8 @@ Calculated at **state and zip code level** to support regional outreach planning
 <summary><b>Page 3 — Chronic Conditions</b> · Follow-Up Tracking</summary>
 
 > *"Which members have the most critical care gaps?"*
+
+![Chronic Conditions](assets/chronic-conditions.png)
 
 | Visual | Purpose |
 |---|---|
@@ -187,6 +192,8 @@ Calculated at **state and zip code level** to support regional outreach planning
 > *"Everything needed before making an outreach call."*
 
 Accessible via **drill-through** from the Chronic Conditions page.
+
+![Member Detail](assets/member-detail.png)
 
 | Visual | Content |
 |---|---|
@@ -263,7 +270,7 @@ AVERAGE(vw_readiness_summary[readiness_score_pct]) & "%"
 
 ## 💬 Project Narrative
 
-> *This population health dashboard supports a regional health plan's care management operations. It moves users through a logical analytical drill-down: leadership views geographic coverage to identify zip codes falling below preventive care targets; clinical teams use chronic condition tracking to find members with significant care gaps; care managers use the risk stratification page to isolate high-risk individuals based on a weighted index of chronic conditions, hospital admissions, and visit recency — enabling proactive, prioritized outreach.*
+> *"This population health dashboard supports a regional health plan's care management operations. It moves users through a logical analytical drill-down: leadership views geographic coverage to identify zip codes falling below preventive care targets; clinical teams use chronic condition tracking to find members with significant care gaps; care managers use the risk stratification page to isolate high-risk individuals based on a weighted index of chronic conditions, hospital admissions, and visit recency — enabling proactive, prioritized outreach."*
 
 ---
 
