@@ -84,15 +84,15 @@ population-health-analytics/
 A composite clinical score combining four weighted factors:
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                    RISK SCORE FORMULA                        │
-│                                                              │
-│  (Chronic Conditions × 2)                                   │
+┌───────────────────────────────────────────────────────────────┐
+│                    RISK SCORE FORMULA                         │
+│                                                               │
+│  (Chronic Conditions × 2)                                     │
 │  + Days Since Last Visit  →  ≤90d = 1 │ ≤120d = 2 │ >120d = 3 │
-│  + (Hospital Admissions × 2)                                │
-│  + (Readmissions × 3)                                       │
-│          │
-└─────────────────────────────────────────────────────────────┘
+│  + (Hospital Admissions × 2)                                  │
+│  + (Readmissions × 3)                                         │
+│                                                               │
+└───────────────────────────────────────────────────────────────┘
 ```
 
 | 🔴 High Risk | 🟡 Medium Risk | 🟢 Low Risk |
@@ -101,16 +101,28 @@ A composite clinical score combining four weighted factors:
 
 ### Care Priority Matrix
 
+
+Care priority is determined by combining two factors:
+```
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                    RISK SCORE FORMULA                                         │
+│ Care Priority = Risk Category + Preventive Visit Status (has_preventive_visit)│
+└───────────────────────────────────────────────────────────────────────────────┘
+```
+
+> `has_preventive_visit = 1` if the member has had a Preventive visit in the last 24 months, otherwise `0`.
+> Risk Category is derived from the Risk Score above.
+
 Members are assigned one of six actionable priority tiers:
 
-| Priority | Risk | Preventive Visit | Action |
+| Priority | Risk Category | Preventive Visit | Action |
 |---|---|---|---|
-| 🔴 **1 - Critical** | High | No visit in 24 months | Immediate outreach |
-| 🟠 **2 - High Priority** | High | Has recent visit | Close monitoring |
-| 🟡 **3 - Moderate Priority** | Medium | No visit in 24 months | Proactive outreach |
-| 🟨 **4 - Monitor** | Medium | Has recent visit | Routine monitoring |
-| 🔵 **5 - Routine Outreach** | Low | No visit in 24 months | Wellness reminder |
-| 🟢 **6 - Healthy** | Low | Has recent visit | No action needed |
+| 🔴 **1 - Critical** | High Risk | No visit in 24 months | Immediate outreach |
+| 🔴 **2 - High Priority** | High Risk | Has recent visit | Close monitoring |
+| 🟡 **3 - Moderate Priority** | Medium Risk | No visit in 24 months | Proactive outreach |
+| 🟡 **4 - Monitor** | Medium Risk | Has recent visit | Routine monitoring |
+| 🟢 **5 - Routine Outreach** | Low Risk | No visit in 24 months | Wellness reminder |
+| 🟢 **6 - Healthy** | Low Risk | Has recent visit | No action needed |
 
 ### Readiness Score
 
@@ -259,7 +271,7 @@ AVERAGE(vw_readiness_summary[readiness_score_pct]) & "%"
 
 ## 💬 Project Narrative
 
-> *This population health dashboard supports a regional health plan's care management operations. It moves users through a logical analytical drill-down: leadership views geographic coverage to identify zip codes falling below preventive care targets; clinical teams use chronic condition tracking to find members with significant care gaps; care managers use the risk stratification page to isolate high-risk individuals based on a weighted index of chronic conditions, hospital admissions, and visit recency — enabling proactive, prioritized outreach.*
+> *"This population health dashboard supports a regional health plan's care management operations. It moves users through a logical analytical drill-down: leadership views geographic coverage to identify zip codes falling below preventive care targets; clinical teams use chronic condition tracking to find members with significant care gaps; care managers use the risk stratification page to isolate high-risk individuals based on a weighted index of chronic conditions, hospital admissions, and visit recency — enabling proactive, prioritized outreach."*
 
 ---
 
