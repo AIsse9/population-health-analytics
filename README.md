@@ -91,7 +91,7 @@ A composite clinical score combining four weighted factors:
 │  + Days Since Last Visit  →  ≤90d = 1 │ ≤120d = 2 │ >120d = 3 │
 │  + (Hospital Admissions × 2)                                │
 │  + (Readmissions × 3)                                       │
-│  + Preventive Visit Gap  →  No visit in 24mo = +2           │
+│          │
 └─────────────────────────────────────────────────────────────┘
 ```
 
